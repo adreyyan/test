@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mojo</title>
+	<style>
+.team-member:hover {
+		transform: scale(1.1); /* increase box size by 10% on hover */
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); /* add box shadow effect */
+		z-index: 1; /* make sure the box is on top of other content */
+		position: relative; /* change box position to relative */
+	}
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  margin-left: 60px;
+	grid-gap: 5px;
+	margin-bottom: 2px;
+}
+.team-member img:hover {
+  transform: scale(1.1); /* increase image size by 10% on hover */
+  transition: all 0.3s ease; /* add smooth transition effect */
+  z-index: 1; /* make sure the image is on top of other content */
+  position: relative; /* change image position to relative */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* add box shadow effect */
+}
+
+@media screen and (max-width: 768px) {
+  .team-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.team-member {
+  flex: 1 0 25%;
+  margin: 5px;
+  padding: 20px;
+  background-color: #faf3d7;
+  text-align: center;
+	margin-bottom: 2px;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.team-member h5 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.team-member p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+h4 {
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			background-image: url('high.png');
+			background-size: 100% 100%; /* or background-size: cover; */
+			background-repeat: no-repeat;
+			display: inline;
+			font-size: 32px;
+		}
+		p{
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 0;
+		}
+		.left-column {
+			padding: 50px;
+			margin-left: 40px;
+		}
+		.right-column {
+			padding: 10px;
+		}
+		@media screen and (max-width: 768px) {
+			h4 {
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 32px;
+				line-height: 1.2;
+			}
+			.container {
+				display: block;
+			}
+			.left-column {
+				padding: 30px;
+			}
+			.right-column {
+				padding: 10px;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left-column">
+			<h4>Mojo is a brand.</h4>
+			<p>An extraordinary brand built by dedicated individuals.</p>
+			<p>In a competitive world where success is everything, we strive to be the best no matter what it takes. Our foundation is built on perseverance and hard work, and we are committed to achieving greatness.</p>
+			<p>Our collection of unique and exclusive NFTs grant you access to a world of endless possibilities, where together we can create a community that reaches the top and beyond.</p>
+			<p>As a humble and dedicated team, we strive to create the ultimate experience for our community. Our goal is to work tirelessly to deliver the best possible products and services, so you can experience the thrill of owning Mojo NFTs and much more.</p>
+			<p>Together, we will moon this shit.</p>
+		</div>
+		<div class="right-column">
+			<!-- Right column content goes here -->
+				</div>
+				<div class="team-section">
+			
+					<div class="team-member">
+						<img src="1.png" alt="Team Member 1">
+						<h5>Drey</h5>
+						<p>Founder &amp; CEO</p>
+						<p>Developer & builder. Mullet lover.</p>
+					</div>
+					<div class="team-member">
+						<img src="1.png" alt="Team Member 2">
+						<h5>Dimas</h5>
+						<p>Creative Director</p>
+					</div>
+					<div class="team-member">
+						<img src="1.png" alt="Team Member 3">
+						<h5>Yeik</h5>
+						<p>Marketing Manager</p>
+					</div>
+					<div class="team-member">
+						<img src="1.png" alt="Team Member 4">
+						<h5>Kassandro</h5>
+						<p>Marketing</p>
+					</div>
+
+				</div>
+
+		</section>
+		
+		
+	</div>
+</body>
+</html>
